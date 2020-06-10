@@ -30,7 +30,7 @@ app.get('/', (req, res)=>{
       {
         url: "http://localhost:3000/api/personas/one/:id",
         method: "get",
-        params: {id},
+        params: ["id"],
         body: {},
         observaciones: "Debe regresar el registro de la persona identificada por id"
       },
@@ -38,20 +38,20 @@ app.get('/', (req, res)=>{
         url: "http://localhost:3000/api/personas/new",
         method: "post",
         params: {},
-        body: {numeroidentidad, nombre, edad, genero, correo, telefono},
+     //   body: {numeroidentidad, nombre, edad, genero, correo, telefono},
         observaciones: "Debe agregar una nueva persona a la tabla"
       },
       {
         url: "http://localhost:3000/api/personas/upd/:id",
         method: "put",
-        params: {id},
-        body: { numeroidentidad, nombre, edad, genero, correo, telefono },
+        params: ["id"],
+       // body: { numeroidentidad, nombre, edad, genero, correo, telefono },
         observaciones: "Debe actualizar los datos en el registro de la persona"
       },
       {
         url: "http://localhost:3000/api/personas/del/:id",
         method: "delete",
-        params: {id},
+        params: ["id"],
         body: {},
         observaciones: "Debe eliminar el registro de la persona"
       }

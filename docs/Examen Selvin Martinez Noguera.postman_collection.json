@@ -1,0 +1,217 @@
+{
+	"info": {
+		"_postman_id": "ea5dd050-ac6c-4858-bd1d-2ba1291ad9ec",
+		"name": "Examen Selvin Martinez Noguera",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/personas/new",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "numeroidentidad",
+							"value": "0801199708935",
+							"description": "Muestra el numero de Identidad",
+							"type": "text"
+						},
+						{
+							"key": "nombre",
+							"value": "Selvin Martinez",
+							"description": "Muestra el nombre",
+							"type": "text"
+						},
+						{
+							"key": "edad",
+							"value": "21",
+							"description": "Muestra la edad",
+							"type": "text"
+						},
+						{
+							"key": "genero",
+							"value": "Masculino",
+							"description": "Muestra el genero",
+							"type": "text"
+						},
+						{
+							"key": "correo",
+							"value": "mselvin385@gmail.com",
+							"description": "Muestra el correo",
+							"type": "text"
+						},
+						{
+							"key": "telefono",
+							"value": "22454079",
+							"description": "Muestra el telefono",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/personas/new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"personas",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/personas/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/personas/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"personas",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/personas/one/:id\"",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/personas/one/:id\"",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"personas",
+						"one",
+						":id\""
+					],
+					"variable": [
+						{
+							"key": "id\"",
+							"value": "1"
+						}
+					]
+				},
+				"description": "Muestra el id por codigo"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/personas/upd/:id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "numeroidentidad",
+							"value": "0801199708935",
+							"type": "text"
+						},
+						{
+							"key": "nombre",
+							"value": "Brayan Martinez",
+							"description": "Muestra el nombre",
+							"type": "text"
+						},
+						{
+							"key": "edad",
+							"value": "21",
+							"type": "text"
+						},
+						{
+							"key": "genero",
+							"value": "Masculno",
+							"type": "text"
+						},
+						{
+							"key": "correo",
+							"value": "mselvin385@gmail.com",
+							"description": "Muestra el correo",
+							"type": "text"
+						},
+						{
+							"key": "telefono",
+							"value": "22454079",
+							"description": "Muestra el telefono",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/personas/upd/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"personas",
+						"upd",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				},
+				"description": "Muestra las modificaciones de los registros"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/personas/del/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/personas/del/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"personas",
+						"del",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
